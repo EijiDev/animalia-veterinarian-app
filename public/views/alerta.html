@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/alerta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Historial Clínico</title>
+</head>
+<body>
+    <a href="#"><i class="fa-solid fa-arrow-left"></i></button></a>
+    <div id="info-container">
+        <img src="resources/Chester.png" alt="Imagen de la mascota">
+       
+        <h2>Información General</h2>
+    <div class="informacion">
+        <div class="info-row">
+            <div class="info-column">
+                <strong>Número de Chip:</strong><p> 123456789</p>
+            </div>
+            <div class="info-column">
+                <strong>Nombre:</strong><p> Juanito</p>
+            </div>
+        </div>
+        <div class="info-row">
+            <div class="info-column">
+                <strong>Esterilización:</strong> <p>Sí</p>
+            </div>
+            <div class="info-column">
+                <strong>Estado:</strong> <p>Perdido</p>
+            </div>
+        </div>
+        <div class="info-row">
+            <div class="info-column">
+                <strong>Edad:</strong> <p>2 años</p>
+            </div>
+            <div class="info-column">
+                <strong>Sexo:</strong><p> Macho</p>
+            </div>
+        </div>
+    </div>
+        <button id="contact-btn">Contactar al Dueño</button>
+    </div>
+
+    <!-- Popup Container -->
+    <div id="popup">
+        <a href="alerta.html"><i class="fa-solid fa-arrow-left"></i></button></a>
+        <div id="popup-container">
+            <img src="resources/Chester.png" alt="Imagen de la mascota en el popup">
+            <h2>Ayúdanos!</h2>
+            <p>Este amigo está perdido y extraña su hogar. ¡Ayúdanos a que vuelva!</p>
+            <button id="popup-btn">Contactar al Dueño</button>
+        </div>
+    </div>
+    <footer>
+        <div class="config">
+            <button><i class="fa-solid fa-gear"></i></button>
+            <button><i class="fa-solid fa-paw"></i> </button>
+            <button><i class="fa-solid fa-user"></i></button>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("contact-btn").addEventListener("click", function() {
+            document.getElementById("popup").style.display = "flex";
+        });
+
+        document.getElementById("popup-btn").addEventListener("click", function() {
+            document.getElementById("popup").style.display = "none";
+        });
+    </script>
+</body>
+</html>
