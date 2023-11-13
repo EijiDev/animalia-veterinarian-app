@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial Clínico</title>
+    <link rel="stylesheet" href="styles/historial-clinico.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <a href="#"><i class="fa-solid fa-arrow-left"></i></button></a>
+    <div class="father">
+        <div class="head">
+            <h1 class="titulo">Historial Clínico</h1>
+        </div>
+        <div class="child">
+            <div class="dueño d">
+                <label for="dueño">DUEÑO:</label>
+                <input type="text" name="dueño" id="dueño" placeholder="Ej: Juan Soto">
+            </div>
+            <div class="direccion d">
+                <label for="direccion">DIRECCION:</label>
+                <input type="text" name="direccion" id="direccion" placeholder="Ej: Pasaje las Flores, 2480">
+            </div>
+            <div class="ciudad d">
+                <label for="ciudad">CIUDAD:</label>
+                <input type="text" name="ciudad" id="ciudad" placeholder="Ej: Santiago">
+            </div>
+            <div class="celular d">
+                <label for="celular">TELÉFONO/CELULAR:</label>
+                <input type="number" name="celular" id="celular" placeholder="Ej: 9 36985225">
+            </div>
+            <div class="nom-paciente-peso">
+                <div class="nom-paciente d">
+                    <label for="nom-paciente">NOMBRE PACIENTE:</label>
+                    <input type="text" name="nom-paciente" id="nom-paciente" class="input-pequeno" placeholder="Ej: Cholito">
+                </div>
+                <div class="peso d">
+                    <label for="peso">PESO:</label>
+                    <input type="text" name="peso" id="peso" class="input-pequeno" placeholder="28kg">
+                </div>
+            </div>
+            
+            <div class="veterinario-encargado d">
+                <label for="veterinario-encargado">VETERINARIO ENCARGADO:</label>
+                <input type="text" name="veterinario-encargado" id="veterinario-encargado" placeholder="Ej: Mario Meza">
+            </div>
+            <div class="motivo-consulta d">
+                <label for="motivo-consulta">MOTIVO DE CONSULTA:</label>
+                <input type="text" name="motivo-consulta" id="motivo-consulta" placeholder="Ej: Molestia en pata trasera izquierda">
+            </div>
+            <div class="desparasitacion-vacunacion">
+    <div class="desparasitacion d">
+        <strong>DESPARASITACIÓN</strong>
+        <label for="fechas">Fechas:</label>
+        <input type="date" name="fechas" id="fecha1" class="input-pequeno">
+        <input type="date" name="fechas" id="fecha2" class="input-pequeno">
+        <input type="date" name="fechas" id="fecha3" class="input-pequeno">
+    </div>
+    <div class="vacunacion d">
+        <strong>VACUNACION</strong>
+        <label for="vacuna">Vacunas:</label>
+        <input type="text" name="vacuna" id="vacuna1" class="input-pequeno" placeholder="Ej: Polivalente">
+        <input type="text" name="vacuna" id="vacuna2" class="input-pequeno" placeholder="Ej: Rabia">
+        <input type="text" name="vacuna" id="vacuna3" class="input-pequeno" placeholder="Ej: Parvovirus">
+    </div>
+</div>
+            <div class="info-animal d">
+                <strong>Enfermedades, Procedimientos Anteriores:</strong>
+                <input type="text" name="info-animal" id="info-animal" placeholder="Ej: Enfermedad gastroenteritis">
+                <input type="text" name="info-animal" id="info-animal" placeholder="Ej: Procedimiento antiémeticos">
+                <input type="text" name="info-animal" id="info-animal">
+            </div>
+            <div class="edad d">
+                <label for="edad">EDAD:</label>
+                <input type="text" name="edad" id="edad" placeholder="Ej: 8 años">
+            </div>
+            <div class="procedencia d">
+                <strong>PROCEDENCIA:</strong>
+                <input type="radio" name="procedencia" id="rural">
+                <label for="rural">Rural</label>
+                <input type="radio" name="procedencia" id="urbano">
+                <label for="urbano">Urbano</label>
+                <input type="radio" name="procedencia" id="otro">
+                <label for="otro">Otro</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #009d9a;
+        background-image: url('Diseño_sin_título__11_-removebg-preview.png');
+}
+.father {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    background-color: #A5E6D4;
+    background-image: url('Diseño_sin_título__11_-removebg-preview.png'); 
+    
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo {
+    color: black;
+}
+
+.volver {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.titulo {
+    margin: 0;
+}
+
+.child {
+    margin-top: 20px;
+}
+
+label {
+    margin: 10px;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+strong {
+    margin:10px;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.desparasitacion,
+.vacunacion,
+.info-animal,
+.procedencia {
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+.fa-arrow-left{
+    margin: 10px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000000;
+}
+.fa-arrow-left:hover {
+    color: rgb(9, 94, 85);
+}
+.fa-arrow-left:active {
+    color: rgb(14, 255, 231);
+}
+
+@media only screen and (max-width: 600px) {
+    /* Estilos para pantallas pequeñas */
+    .father {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .volver {
+        padding: 8px 10px;
+    }
+
+    input {
+        padding: 10px;
+        
+    }
+}
+
+.d {
+    border: solid black 2px;
+}
+
+input {
+    background-color: #009d9a;
+    border: none;
+    width: 90%;
+    margin-left: 2.5rem;
+    border-radius: 10px;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.603);
+}
+
+.nom-paciente-peso,
+.desparasitacion-vacunacion {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.input-pequeno {
+    width: 80%; 
+}
+
+
+.nom-paciente,
+.peso,
+.desparasitacion,
+.vacunacion,
+.procedencia {
+    flex: 1;
+    margin-right: auto;
+}
+
+.father{
+    background-image: url(dogcat.png);
+    background-repeat: no-repeat;;
+}
+.procedencia {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    
+}
+
+.procedencia strong {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+}
+
+.procedencia input[type="radio"],
+.procedencia label {
+    height: 18px;
+    flex: 0 0 10%; /* Establece el ancho deseado para cada elemento */
+}
+
+@media only screen and (max-width: 600px) {
+    /* Estilos para pantallas pequeñas */
+    .procedencia input[type="radio"],
+    .procedencia label {
+        flex: 0 0 10%; /* Cambia a un diseño de una columna en pantallas pequeñas */
+    }
+}
