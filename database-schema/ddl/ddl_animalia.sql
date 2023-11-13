@@ -99,6 +99,8 @@ CREATE TABLE pets(
     Sex varchar(30) not null,
     Age integer not null,
     Breed_ID_FK integer  not null,
+    status text not null,
+    esterilizado text not null,
     primary key(Pet_ID),
     constraint pet_race_fk 
     foreign key(Breed_ID_FK) references breeds(Breed_ID)

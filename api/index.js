@@ -1,19 +1,19 @@
 const { Pool } = require("pg");
 
 const config = {
-    user: 'postgres',
-    host: 'monorail.proxy.rlwy.net',
-    port: 53247,
-    password: 'Fc3e1F4Fg6G*EC1C-aga*cG32AG23Bdc',
-    database: 'railway',
+    user: process.env.USER || 'postgres',
+    host: process.env.HOST || 'monorail.proxy.rlwy.net',
+    port: process.env.PORT || 16109,
+    password: process.env.PASSWORD || 'CaBa5CgbFacg5DE3ad2CgeAgBD2GFe3C',
+    database: process.env.DATABASE || 'railway',
 }
 
 const pool = new Pool(config);
 
 //Interacción directa con bd
 const p = async () => {
-  const a = await pool.query(`SELECT * FROM pets;`);
+  const a = await pool.query(``);
   console.log(a);
 };
-p();
+// p();
 module.exports = pool;

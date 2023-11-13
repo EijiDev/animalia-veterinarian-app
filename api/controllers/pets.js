@@ -1,5 +1,6 @@
 const Users = require("../models/users");
 const Pets = require("../models/pets");
+const path = require("path");
 
 function addPet(req, res){
     res.json(
@@ -11,14 +12,28 @@ function addPet(req, res){
     )
 };
 
-function getPet(req, res){
-    res.json(
-        { 
-            "name":"Tony", 
-            "breed":"Husky",
-            "age":3,
-        }
-    )
+async function getPet(req, res){
+    const petid = parseInt(req.params.petid);
+    console.log(petid);
+    try{
+        const pet = await Pets.getPetByID(petid);
+
+        res.json(pet);
+    } catch(e){
+        console.error(e);
+    }
+};
+
+async function getPetAlerta2(req, res){
+    try{
+        const options = {
+            root: path.join(__dirname, '..', '..', 'public', 'views'),
+        };
+
+        res.status(200).sendFile('alerta2.html', options);
+    } catch(e){
+        console.error(e);
+    }
 };
 
 function getAllPets(req, res){
@@ -72,4 +87,4 @@ function deletePet(req, res){
 
 
 
-module.exports = { addPet, getPet, getAllPets, getUserPets, updatePet, deletePet };
+module.exports = { addPet, getPet, getAllPets, getUserPets, updatePet, deletePet, getPetAlerta2 };

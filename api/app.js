@@ -50,6 +50,7 @@ app.get('/addpet', ensureAuth, (req, res) => {
     res.status(200).sendFile('register-animal.html', options);
 });
 
+
 //Config the app PORT
 app.listen(PORT, () => {
     console.log(`Servidor andando en ${PORT}!`)
