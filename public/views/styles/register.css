@@ -1,0 +1,90 @@
+#register-container {
+    background-color: #A5E6D4;
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#register-container #logo {
+    margin-bottom: 20px;
+}
+
+#register-container #logo img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #009D9A;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-weight: bold;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Aumentado el margen top para separar más los elementos */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #000;
+    background-color: #A5E6D4;
+    margin: 10px 0; /* Aumentado el margen entre los campos de texto */
+    border-radius: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.register-button {
+    background-color: #009D9A;
+    color: #A5E6D4;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.register-button:hover {
+    background-color: #A5E6D4;
+    color: #009D9A;
+}
+
+#register-container a {
+    color: #009D9A;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px; /* Aumentado el margen top para separar más los elementos */
+}
+
+#register-container a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .input-container {
+        width: 100%;
+        margin-top: 10px; /* Ajustado el margen top para dispositivos móviles */
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="tel"] {
+        width: calc(100% - 10px);
+        margin: 5px 0 10px;
+    }
+}
