@@ -6,7 +6,7 @@ petsRouter.get('/pet/:petid', mdEnsureAuth, PetsController.getPet);
 
 petsRouter.get('/pets', mdEnsureAuth, PetsController.getAllPets);
 
-petsRouter.get('/:userid/pets', mdEnsureAuth, PetsController.getUserPets);
+petsRouter.get('/:useraccountid/pets', mdEnsureAuth, PetsController.getUserPets);
 
 petsRouter.post('/pet', mdEnsureAuth, PetsController.addPet);
 

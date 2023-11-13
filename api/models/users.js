@@ -16,8 +16,24 @@ async function createUser(email, password, rol, RUT, name, surname, phone, addre
     } catch(e){
         throw new Error(e.error);
     }
-}
+};
+
+async function getUserByID(userId){
+    const TEXT = `SELECT * FROM users WHERE user_account_id_fk = $1;`;
+    try {
+        const client = await pool.connect();
+
+        const query = await client.query(TEXT, [userId]) 
+
+        client.release(true);
+
+        return query;
+    } catch (e) {
+        throw new Error("Hubo un error al intentar obtener el usuario por id");
+    }
+};
 
 module.exports = {
     createUser,
+    getUserByID,
 }

@@ -2,6 +2,7 @@ const Accounts = require('../models/accounts');
 const Users = require('../models/users');
 
 async function logInUser(req, res){
+    console.log("En login");
     //Obtiene las credenciales enviadas por el cliente
     const { email, password } = req.body; 
     
