@@ -94,6 +94,7 @@ CREATE TABLE vets_addresses(
 
 CREATE TABLE pets(
     Pet_ID SERIAL not null,
+    urlimage text null,
     Name varchar(30) not null,
     Sex varchar(30) not null,
     Age integer not null,

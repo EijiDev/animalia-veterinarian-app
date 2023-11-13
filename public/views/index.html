@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="../assets/logo.png"/>   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index.css">
+    <title>Iniciar sesión | Animalia🐾</title>
 </head>
 <body>
   <div id="login-container">
     <div id="logo">
-      <img src="./resources/pata-de-perro.png" alt="Logo de Animalia">
+      <img src="../assets/pata-de-perro.png" alt="Logo de Animalia">
     </div>
-    <form class="login-form" action="" method="post">
+    <form class="login-form">
       <label for="username">Correo:</label>
       <div class="input-container">
         <input type="text" id="email" name="email" required placeholder="Ingrese su Correo">
@@ -19,9 +22,10 @@
         <input type="password" id="password" name="password" required placeholder="Ingrese su Contraseña">
       </div>
 
-      <input type="submit" value="Iniciar sesión" class="login-button">
-      <p>Si aun no tienes una cuenta registrate <a href="register.html">aqui</a></p>
+      <input type="submit" value="Iniciar sesión" class="login-button" id="login-button">
+      <p>Si aun no tienes una cuenta registrate <b><a href="http://localhost:3000/register">aqui</a></b></p>
     </form>
   </div>
+  <script src="../scripts/index.js"></script>
 </body>
 </html>

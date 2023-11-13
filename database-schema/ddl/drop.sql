@@ -1,0 +1,16 @@
+DROP TABLE species;
+DROP TABLE breeds;
+DROP TABLE phones;
+DROP TABLE addresses;
+DROP TABLE status;
+DROP TABLE roles;
+DROP TABLE user_accounts;
+DROP TABLE vets;
+DROP TABLE vets_phones;
+DROP TABLE vets_addresses;
+DROP TABLE pets;
+DROP TABLE users;
+DROP TABLE users_pets;
+DROP TABLE users_addresses;
+DROP TABLE users_phones;
+DROP TABLE attention_records;

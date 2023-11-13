@@ -30,10 +30,10 @@ INSERT INTO breeds(Breed, Specie_ID_FK) VALUES('Kai Ken', 1),
 											('Bengali', 2);
 
 -- Add proof pets
-INSERT INTO pets(Name, Sex, Age, Breed_ID_FK) VALUES('Tony', 'Macho', 2, 1),
-													 ('Martha', 'Hembra', 1, 4),
-													 ('Masha', 'Hembra', 4, 1),
-													 ('Princess', 'Hembra', 2, 3);
+INSERT INTO pets(urlimage, Name, Sex, Age, Breed_ID_FK) VALUES('../assets/tony.png','Tony', 'Macho', 2, 1),
+													 		  ('../assets/martha.png','Martha', 'Hembra', 1, 4),
+															  ('../assets/masha.png','Masha', 'Hembra', 4, 1),
+															  ('../assets/princess.png','Princess', 'Hembra', 2, 3);
 
 -- Add proof status
 INSERT INTO status(Status) VALUES('On hold'),
